@@ -9,15 +9,23 @@ To start a local development server, run:
 ```bash
 ng serve
 ```
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Server with Backend
+## Server with Backend Real Nest-Teslo
 
 To start of backend this application, open Docker and run in nest-teslo project:
 ```bash
 npm run start:dev
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+In the case that app docker don't have any server, you can set in the console of nest-teslo project:
+```bash
+docker compose up -d
+npm install (if node_modules not exist)
+```
+The configuration is in docker-compose.yaml
+
+For test, you can open postman and test the endpoint
 
 ## Code scaffolding
 
